@@ -1,6 +1,6 @@
 ---
 name: update-from-records
-description: Bring a table that people keep by hand up to date from the company's records, with a source for every value and nothing written until a person approves. The table can be a spreadsheet or a database of events, attendees, members, contacts, projects or statuses. Use this whenever someone wants such a table filled in, caught up or checked against what actually happened, even if they never say "table" or "records": for example "add who came to last night's event to the sheet", "update the status column from the meeting notes", "is our member list still right?", or filling a new, empty tracker for the first time.
+description: Bring a table that people keep by hand up to date from the company's records, with a source for every value and nothing written until a person approves. The table can be a spreadsheet or a database of events, attendees, members, contacts, projects or statuses. Use this whenever someone wants such a table filled in, caught up or checked against what actually happened, even if they never say "table" or "records", such as "add who came to last night's event to the sheet", "update the status column from the meeting notes", "is our member list still right?", or filling a new, empty tracker for the first time.
 ---
 
 # Update a table from the records
