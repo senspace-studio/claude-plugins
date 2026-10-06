@@ -11,6 +11,8 @@ Three things share the work. Intelligence finds where a fact is written and retu
 
 ## What the table holds
 
+A table is made of parts, entries and fields: in a spreadsheet, tabs, rows and columns; in a database, the databases, their pages and properties. This skill says rows and columns for both.
+
 Sort everything in the table into three kinds before writing anything.
 
 - **Structure**: tabs or databases, headers, legends, lists of allowed values, computed columns, settings.
@@ -39,7 +41,7 @@ Adding a state as rows stacks up copies of one thing. Overwriting an event as a 
 
 ## Reading the table
 
-Read every tab's headers, legends and instructions, and find which columns are computed and which ones people fill in.
+Read the headers, legends and instructions of every part of the table, and find which columns are computed and which ones people fill in.
 
 ### References
 
@@ -105,13 +107,13 @@ Write only what the person approves. If they approve part, write that part. The 
 
 ## Writing
 
-- **Write only where people enter values.** A value written into a computed column replaces its formula, and every total built on it goes quietly wrong.
+- **Write only where people enter values.** A value written into a computed column either replaces how it is computed, so every total built on it goes quietly wrong, or is refused.
 - **What is pointed at comes first.** Where a row refers to a row in another table or tab that is new in this set of changes, write that row first.
 - **Every value carries its source.** Attach it as a note or comment on the value, unless the reference names another place. Without a source, nobody can later tell whether the value still holds.
 
 ## After writing
 
-- Every computed column still holds its formula.
+- Every computed column is still computed.
 - Every required field in the rows you added is filled.
 - The table's own checks pass, if it has any.
 

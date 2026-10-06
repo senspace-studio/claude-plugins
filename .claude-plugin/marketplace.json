@@ -7,9 +7,7 @@
   "plugins": [
     {
       "name": "intelligence",
-      "displayName": "Intelligence",
-      "source": "./plugins/intelligence",
-      "description": "Search across the company's records, along with numbers on how what it published was received outside, and bring the tables people keep by hand up to date from those records."
+      "source": "./plugins/intelligence"
     }
   ]
 }
