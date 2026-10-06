@@ -1,15 +1,22 @@
 # Claude plugins from Senspace Studio
 
-A marketplace of Claude plugins. Each plugin lives under [plugins/](plugins/) with its own README.
+A marketplace of Claude plugins. Each plugin lives under [plugins/](plugins/), and its README says how to connect it.
 
-## Add the marketplace
+## Claude Code
 
-In Claude Code:
+Add the marketplace and install a plugin by name:
 
 ```
 /plugin marketplace add senspace-studio/claude-plugins
+/plugin install <plugin>@senspace
 ```
 
-In Claude on the web and Desktop, open "Customize", then "Plugins", and add `senspace-studio/claude-plugins` as a marketplace.
+Update a plugin, then restart to apply it:
 
-Then install a plugin by name, for example `/plugin install intelligence@senspace`.
+```
+claude plugin update <plugin>@senspace
+```
+
+## Claude on the web and Desktop
+
+Open "Customize", then "Plugins", add `senspace-studio/claude-plugins` as a marketplace, and install a plugin from it. Updates arrive on their own.
