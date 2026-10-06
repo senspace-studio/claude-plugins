@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "intelligence": {
+      "type": "http",
+      "url": "https://intelligence.senspace.xyz/mcp"
+    }
+  }
+}
