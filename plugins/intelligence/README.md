@@ -1,6 +1,6 @@
 # Intelligence
 
-Search across the company's records, along with numbers on how what it published was received outside, and bring the tables people keep by hand up to date from those records. The plugin is the intelligence MCP server, authenticated with a passphrase set by whoever runs the server, together with skills that use it. Other connectors it needs are listed in [CONNECTORS.md](CONNECTORS.md).
+Work from your company's records: search across every source, see how its accounts and posts are doing outside, and ground what Claude writes in what the records say, citing where each fact is written. The plugin is the intelligence MCP server, authenticated with a passphrase set by whoever runs the server, together with skills that use it. Other connectors it needs are listed in [CONNECTORS.md](CONNECTORS.md).
 
 ## Skills
 
