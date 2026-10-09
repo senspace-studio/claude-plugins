@@ -1,7 +1,7 @@
 {
   "name": "intelligence",
   "displayName": "Intelligence",
-  "description": "Work from your company's records: search across every source, see how its accounts and posts are doing outside, and ground what Claude writes in what the records say, citing where each fact is written.",
+  "description": "Work from your company's records: search across every source, see how its accounts and posts are doing outside, and ground what Claude writes in where each fact comes from, citing it.",
   "author": {
     "name": "Senspace Studio"
   },

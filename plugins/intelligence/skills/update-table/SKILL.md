@@ -1,13 +1,13 @@
 ---
-name: update-from-records
-description: Bring a table that people keep by hand up to date from the company's records, with a source for every value and nothing written until a person approves. The table can be a spreadsheet or a database of events, attendees, members, contacts, projects or statuses. Use this whenever someone wants such a table filled in, caught up or checked against what actually happened, even if they never say "table" or "records", such as "add who came to last night's event to the sheet", "update the status column from the meeting notes", "is our member list still right?", or filling a new, empty tracker for the first time.
+name: update-table
+description: Bring a table that people keep by hand up to date from the company's records and from how its accounts were received outside, with a source for every value and nothing written until a person approves. The table can be a spreadsheet or a database of events, attendees, members, contacts, projects or statuses. Use this whenever someone wants such a table filled in, caught up or checked against what actually happened, even if they never say "table" or "records", such as "add who came to last night's event to the sheet", "update the status column from the meeting notes", "is our member list still right?", or filling a new, empty tracker for the first time.
 ---
 
-# Update a table from the records
+# Update a table from the records and their reception
 
-People copy facts out of the company's records into tables they keep by hand. Copying by hand drifts. Values get mistyped, formulas get overwritten, and values that no record supports creep in. This skill writes into such a table the facts the records state, each with its source, and leaves every decision about the table to the people who keep it.
+People copy facts out of the company's records into tables they keep by hand, and facts about how its accounts were received outside. Copying by hand drifts. Values get mistyped, formulas get overwritten, and values that nothing supports creep in. This skill writes into such a table the facts the records state and the facts the outside holds, each with its source, and leaves every decision about the table to the people who keep it.
 
-Three things share the work. Intelligence finds where a fact is written and returns numbers about the company's accounts. The connector for wherever the table lives reads and writes its values. This skill holds how to write into the table.
+Three things share the work. Intelligence finds where a fact is written, and returns what the outside holds about how the company's accounts were received: numbers, and who received them. The connector for wherever the table lives reads and writes its values. This skill holds how to write into the table.
 
 ## What the table holds
 
@@ -24,7 +24,7 @@ People decide structure and judgment. You write facts. If a fact cannot be writt
 Facts come in two kinds.
 
 - **An event** happens and adds one more. Add a row for it.
-- **A state** is one value that moves over time. Change it only when a record newer than the current value states the change.
+- **A state** is one value that moves over time. Change it only when a source newer than the current value shows the change.
 
 Adding a state as rows stacks up copies of one thing. Overwriting an event as a state erases the ones before it.
 
@@ -32,8 +32,8 @@ Adding a state as rows stacks up copies of one thing. Overwriting an event as a 
 
 1. **Read the table**, with its reference and settings.
 2. **Settle the scope**: which period, events, people or projects to cover.
-3. **Gather material** from the records.
-4. **Match names** in the records to rows in the table.
+3. **Gather material** from the records and from how the accounts were received.
+4. **Match names** in the material to rows in the table.
 5. **Build the changes.**
 6. **Show the changes** and wait for approval.
 7. **Write** what was approved.
@@ -67,10 +67,11 @@ A table can hold settings for this skill: where its records are kept, such as ac
 - Search the records with intelligence to find where a fact is written. Use the table's settings to aim the search.
 - Search returns a spreadsheet as what it holds, not its values. When one looks relevant, open it with its connector and read the values.
 - Judge a file by what it holds, not by its title. People file things where it suited them at the time, so a list can sit inside a document named for something else.
+- For facts no record holds, ask intelligence how the accounts were received: the numbers the outside reports, and who received what the accounts put out. Each of these was observed at a time, and holds as of that time.
 
 ## Matching names
 
-A name in a record and a row in the table are the same only when a key or an identifier matches exactly, such as the table's key column, an account handle or an ID. Treat everything else as a candidate and ask, including similar spellings, first names alone and nicknames. Create a new row only after a person confirms that the name matches none of the existing rows.
+A name in a record, or in how the accounts were received, and a row in the table are the same only when a key or an identifier matches exactly, such as the table's key column, an account handle or an ID. Treat everything else as a candidate and ask, including similar spellings, first names alone and nicknames. Create a new row only after a person confirms that the name matches none of the existing rows.
 
 When intelligence returns a connection between two names, show its quote with the candidate. It helps the person decide. It does not decide for them.
 
@@ -78,23 +79,24 @@ A mistaken match is costly. Where rows refer to each other by key, a duplicate c
 
 ## Building the changes
 
-For each fact, decide where it goes, the value, whether it adds a row or changes a state, and its source: the record's title, a link, and the passage that states it.
+For each fact, decide where it goes, the value, whether it adds a row or changes a state, and its source. For a fact a record states, the source is the record's title, a link, and the passage that states it. For a fact the outside holds, it is which account and what about it, and when that was observed.
 
-- **No source, no value.** A fact you cannot source goes on the list for a person. So does anything you looked for and did not find. A record not mentioning something does not mean it did not happen.
+- **No source, no value.** A fact you cannot source goes on the list for a person. So does anything you looked for and did not find. A record not mentioning something does not mean it did not happen, and someone missing from how the accounts were received may only not have been observed yet.
 - **Include what a fact points at.** Where a fact refers to a row in another table or tab that does not exist yet, include that row in the changes too.
 - **One fact, one row.** Before adding a row, check whether any row already states the same fact, including rows people wrote without a source. Running this again must not add anything.
-- **Totals only when stated.** A field that sums up other rows is written only when a record states that number itself. Filling it by counting rows overwrites a number a person counted with one counted a different way.
+- **Totals only when stated.** A field that sums up other rows is written only when a record states that number itself or the outside reports it. Filling it by counting rows overwrites a number a person counted with one counted a different way.
 - **Choose by meaning.** Where a column takes one of a set of values, choose by what each value means, as the reference or the table's legend defines it, not by its label. People rename labels.
 - **Leave values only the table holds as they are.** A person may know them from outside the records, and a record not stating something is not evidence that it is wrong.
 
 ## Showing the changes
 
-Before writing, show one table of changes. For each change, give where it goes, the value, whether it adds a row or changes a state, and its source with the quoted passage. For example:
+Before writing, show one table of changes. For each change, give where it goes, the value, whether it adds a row or changes a state, and its source with the quoted passage or the observation. For example:
 
 | Where | Value | Change | Source |
 | --- | --- | --- | --- |
 | Attendance, new row | Event 12 · Jordan Lee · attended | Adds a row | "Event 12 guest list", link: "Jordan Lee — checked in" |
 | Projects, row "Spring launch", Status | Waiting on venue → Confirmed | Changes a state | "Weekly sync 3 May", link: "Venue signed, launch is on" |
+| Contacts, row "Jordan Lee", Followers | 640 → 702 | Changes a state | How @studio was received: Jordan Lee's followers, observed 1 Sep |
 
 Then list separately:
 
