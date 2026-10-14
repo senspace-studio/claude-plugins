@@ -1,6 +1,6 @@
 # Intelligence
 
-Work from your company's records: search across every source, see how its accounts and posts are doing outside, and ground what Claude writes in where each fact comes from, citing it.
+Search across your company's records, see how its social accounts are received, and update the records with what people tell you and what the records show, writing only what the person approves.
 
 The plugin is the intelligence MCP server together with skills that use it. Other connectors it needs are listed in [CONNECTORS.md](CONNECTORS.md).
 
