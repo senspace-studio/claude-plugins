@@ -1,7 +1,7 @@
 {
   "name": "intelligence",
   "displayName": "Intelligence",
-  "description": "Work from your company's records: search across every source, see how its accounts and posts are doing outside, and ground what Claude writes in where each fact comes from, citing it.",
+  "description": "Search across your company's records, see how its social accounts are received, and update the records with what people tell you and what the records show, writing only what the person approves.",
   "author": {
     "name": "Senspace Studio"
   },

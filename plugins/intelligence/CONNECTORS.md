@@ -1,12 +1,12 @@
 # Connectors
 
-Intelligence finds where things are written in your company's records, and how its accounts were received outside. Reading and writing anything else, such as the table a skill keeps up to date, is left to the connectors you have added to Claude.
+Intelligence searches your company's records and reports their reception, how the company's social accounts are received. Reading a record as it is now and writing to it are left to the connectors you have added to Claude.
 
 Skills refer to tools by category, not by product. Any connector in the same category works the same way.
 
 | Category | Included | Other options |
 | --- | --- | --- |
-| The company's records and their reception | Intelligence | — |
-| Spreadsheet or database, where the table lives | — | Google Sheets, Microsoft 365 (Excel), Notion |
+| Searching the company's records, and their reception | Intelligence | — |
+| Where the records live, to read one as it is now and write to it | — | Notion, Google Drive, Google Sheets, Microsoft 365 (Excel) |
 
 Add anything not included from Claude's connector settings yourself.
